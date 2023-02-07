@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "speautifaille",
+    "slug": "speautifaille",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "speautifaille"
+}
