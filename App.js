@@ -5,7 +5,6 @@ import Loading from './components/Loading';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Loading/>
     </View>
   );
 }
