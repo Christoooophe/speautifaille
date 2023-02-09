@@ -3,11 +3,7 @@ import { Text, View, StyleSheet, Image, Alert } from 'react-native';
 import ButtonPerso from '../components/buttons/ButtonPerso';
 import Inputs from '../components/inputs/Inputs';
 
-const CreateAcount = () => {
-
-    function inscription(){
-        Alert.alert("ça y est t'es inscrit")
-    }
+const CreateAcount = ({navigation}) => {
 
     return (
         <View style={styles.container}>
@@ -16,7 +12,7 @@ const CreateAcount = () => {
                 <Inputs label='Votre mail'/>
                 <Inputs label='Votre mot de passe' value='password'/>
                 <Inputs label='Répétez votre mot de passe'/>
-                <ButtonPerso title='Inscription' onPress={inscription}/>
+                <ButtonPerso title='Inscription' onPress={navigation.navigate('Home')}/>
             </View>
         </View>
     );
@@ -26,6 +22,8 @@ export default CreateAcount;
 
 const styles = StyleSheet.create({
     container : {
+        backgroundColor: '#0d1b21',
+        flex : 1,
         display : 'flex',
         flexDirection : 'column',
         alignItems : 'center',
@@ -33,7 +31,7 @@ const styles = StyleSheet.create({
     },
     containerInscription : {
         width : 300,
-        height : 500,
+        height : 450,
         borderWidth : 2,
         borderColor : 'white',
         borderRadius : 25,
