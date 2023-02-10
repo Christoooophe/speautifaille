@@ -12,7 +12,7 @@ const CreateAcount = ({navigation}) => {
                 <Inputs label='Votre mail'/>
                 <Inputs label='Votre mot de passe' value='password'/>
                 <Inputs label='Répétez votre mot de passe'/>
-                <ButtonPerso title='Inscription' onPress={navigation.navigate('Home')}/>
+                <ButtonPerso title='Inscription' onPress={navigation.navigate('Acc')}/>
             </View>
         </View>
     );
@@ -22,7 +22,7 @@ export default CreateAcount;
 
 const styles = StyleSheet.create({
     container : {
-        backgroundColor: '#0d1b21',
+        backgroundColor: '#000000',
         flex : 1,
         display : 'flex',
         flexDirection : 'column',

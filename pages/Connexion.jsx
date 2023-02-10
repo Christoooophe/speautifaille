@@ -21,7 +21,7 @@ export default Connexion;
 
 const styles = StyleSheet.create({
     container : {
-        backgroundColor: '#0d1b21',
+        backgroundColor: '#000000',
         flex : 1,
         display : 'flex',
         flexDirection : 'column',

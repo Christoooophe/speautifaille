@@ -18,7 +18,7 @@ export default Accueil;
 
 const styles = StyleSheet.create({
     container : {
-        backgroundColor: '#0d1b21',
+        backgroundColor: '#000000',
         flex : 1,
         display : 'flex',
         flexDirection : 'column',
