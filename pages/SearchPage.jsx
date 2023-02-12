@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, View, StyleSheet, ScrollView, TextInput } from 'react-native';
 import Parcourir from '../components/parcourir/Parcourir';
+import PlayerMini from '../components/player/PlayerMini';
 
 const SearchPage = () => {
     return (
@@ -19,6 +20,7 @@ const SearchPage = () => {
                     <Parcourir image={require('../assets/techno.jpg')} titre='techno'/>
                 </View>
             </ScrollView>
+            <PlayerMini/>
         </View>
     );
 };
