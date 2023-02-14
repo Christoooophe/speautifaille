@@ -9,6 +9,7 @@ import HomePage from './pages/HomePage';
 import SearchPage from './pages/SearchPage';
 import LibraryPage from './pages/LibraryPage';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import PlayerModal from './components/player/PlayerModal';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -66,6 +67,7 @@ export default function App() {
           component={Acc}
           options={{ headerShown: false }}
         />
+        <Stack.Screen name="Player" component={PlayerModal} options={{headerShown: false}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
